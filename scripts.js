@@ -1,20 +1,3 @@
-// An Ode to the Code Gods
-//
-// In the sacred halls of syntax and scheme,
-// We crafted a script, a programmer’s dream.
-// With debounce as our shield, against stormy flows,
-// We tame the tempest that in the viewport grows.
-//
-// In the div's deep shadows, hidden from sight,
-// Styles we set, with margins just right.
-// Visibility granted by a coder’s decree,
-// A container now seen, as it was meant to be.
-//
-// An observer lies waiting for the node's silent call,
-// To update, to adapt, to stand proud and tall.
-// Through mutation's gateway, a frame does appear,
-// And the code to the gods, we now revere.
-
 // Utility function for debouncing calls to a function
 function debounce(func, wait) {
   let timeout;
@@ -36,6 +19,7 @@ function setContainerStyles(container, height, margins) {
   container.style.marginRight = right;
   container.style.marginBottom = bottom;
   container.style.marginLeft = left;
+  container.style.setProperty('background-image', 'none', 'important');
   container.style.visibility = 'visible'; // Make the container visible
 }
 
